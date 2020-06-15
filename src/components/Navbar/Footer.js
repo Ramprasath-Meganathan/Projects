@@ -6,21 +6,18 @@ class Footer extends Component
 render()
 {
     return(
-<nav class="navbar fixed-bottom navbar-light bg-light rowCenter">
-<div class="row">
-  <a className="navbar-brand d-flex justify-content-center" href="#" style={footerStyle}>Copyright 2020 All rights reserved</a>
-  <a href="/notfound" className="navbar-primary d-flex justify-content-center" style={footerStyle}>Contact us </a>
+        <div className="footer">
+<nav className="navbar navbar-expand-lg fixed-bottom navbar-light bg-light rowCenter">
+  <a href="foo" className="navbar-brand d-flex justify-content-center footerStyle">Copyright 2020 All rights reserved</a>
+  <a href="/notbuilt" className="navbar-primary d-flex justify-content-center footerStyle">Contact us </a>
   <span className="px-1"/>
-  <a href="/Feedback" className="navbar-primary d-flex justify-content-center" style={footerStyle}>Feedback</a>
-  </div>
+  <a href="/Feedback" className="navbar-primary d-flex justify-content-center footerStyle">Feedback</a>
 </nav>
+</div>
     );
 }
 }
 
-const footerStyle ={
-    'font-size':'14px',
 
-};
 
 export default Footer

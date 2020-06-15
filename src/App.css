@@ -67,13 +67,6 @@
   flex: 0 0 200px;
 }
 
-/* 
-
-.Login form {
-  margin: 0 auto;
-  max-width: 320px;
-} */
-
 .button {
   font-size: 15px;
   font-weight: bold;
@@ -82,8 +75,6 @@
 .nav-link{
   color:white
 }
-
-
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;..");
@@ -139,7 +130,7 @@
   max-width: none;
 } 
 
-.cardStyle
+Card
 { width: '10rem';
   height:'7rem';  }
 
@@ -157,8 +148,22 @@
     font-size: 9px;
   }
 
-.cardStyle 
+.card 
 { width: '8rem';
   height:'5rem';  }
   
+}
+
+.error {
+  color:red;
+  font-size: 10pt;
+}
+
+.login > p > p{
+  color:red;
+  font-size: 10pt;
+}
+
+.footerStyle{
+  font-size:'14px'
 }

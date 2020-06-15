@@ -1,15 +1,14 @@
-import React, { useState,Component } from "react";
-
+import React, { Component } from "react";
 import '../App.css';
 import { Card } from "react-bootstrap";
 
-class About extends Component{
+class NotFound extends Component{
     render()
     { 
         return (
-            <div class="container">
+            <div className="container">
           <form>
-          <div class="row">
+          <div className="row">
           <Card
     bg='light'
     key='info'
@@ -18,7 +17,7 @@ class About extends Component{
     className="mb-2">
     <Card.Body>
       <Card.Text>
-        <h1>Page yet to be built</h1>
+        Page not found
       </Card.Text>
     </Card.Body>
   </Card>
@@ -29,4 +28,4 @@ class About extends Component{
     }
 }
 
-export default About
+export default NotFound
