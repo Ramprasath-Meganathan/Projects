@@ -27,6 +27,8 @@ class Login extends Component {
         }
         else {
             window.alert('Login successful')
+            this.state.email=''
+            this.state.password=''
             this.errors = [];
             this.setState({ errors });
         }

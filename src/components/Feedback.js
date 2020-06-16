@@ -28,6 +28,9 @@ class Feedback extends Component {
         }
         else {
             window.alert('Feedback updated')
+            this.state.name=''
+            this.state.email=''
+            this.state.comment=''
             this.errors = [];
             this.setState({ errors });
         }

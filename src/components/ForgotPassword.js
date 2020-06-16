@@ -25,6 +25,7 @@ class ForgotPassword extends Component {
         }
         else {
             window.alert('Password link has been sent to your email address')
+            this.state.email=''
             this.errors = [];
             this.setState({ errors });
         }
