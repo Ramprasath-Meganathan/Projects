@@ -4,10 +4,10 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import App from './App';
 
-
+//life cycle starting page
 ReactDOM.render(
   <React.StrictMode>
-  <App/>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

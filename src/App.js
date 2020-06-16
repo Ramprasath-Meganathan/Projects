@@ -11,26 +11,26 @@ import NotBuilt from './components/NotBuilt'
 import Feedback from './components/Feedback'
 import ForgotPassword from './components/ForgotPassword'
 
-
+//Navigation page where the routes are specified
 class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
+        <section className="App">
           <Navbar />
-          <div className="container">
-          <Switch>
-          <Route exact path="/"><Landing/></Route>
-            <Route exact path="/about"><About/></Route>
-            <Route exact path="/login"><Login/></Route>
-            <Route exact path="/notbuilt"><NotBuilt/></Route>
-            <Route exact path="/feedback"><Feedback/></Route>
-            <Route exact path="/forgotPassword"><ForgotPassword/></Route>
-            <Route><NotFound/></Route>
-          </Switch>
-          </div>
+          <section className="container">
+            <Switch>
+              <Route exact path="/"><Landing /></Route>
+              <Route exact path="/about"><About /></Route>
+              <Route exact path="/login"><Login /></Route>
+              <Route exact path="/notbuilt"><NotBuilt /></Route>
+              <Route exact path="/feedback"><Feedback /></Route>
+              <Route exact path="/forgotPassword"><ForgotPassword /></Route>
+              <Route><NotFound /></Route>
+            </Switch>
+          </section>
           <Footer />
-        </div>
+        </section>
       </Router>
 
     );

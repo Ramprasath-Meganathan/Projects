@@ -3,14 +3,15 @@ import { Card } from "react-bootstrap";
 import ControlledCarousel from './ControlledCarousel';
 import '../App.css';
 
+//starting page for the user which contains a image slider and the navigation options to other pages
 class Landing extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row">
+      <article className="container">
+        <article className="row">
           <ControlledCarousel />
-          <div className="col-md col-sm-6 mt-4 mx-auto">
+          <article className="col-md col-sm-6 mt-4 mx-auto">
             <Card
               bg='primary'
               key='success'
@@ -23,8 +24,8 @@ class Landing extends Component {
         </Card.Link>
               </Card.Body>
             </Card>
-          </div>
-          <div className="col-md col-sm-6 mt-4 mx-auto">
+          </article>
+          <article className="col-md col-sm-6 mt-4 mx-auto">
             <Card
               bg='success'
               key='primary'
@@ -38,8 +39,8 @@ class Landing extends Component {
       </Card.Link>
               </Card.Body>
             </Card>
-          </div>
-          <div className="col-md col-sm-6 mt-4 mx-auto">
+          </article>
+          <article className="col-md col-sm-6 mt-4 mx-auto">
             <Card
               bg='dark'
               key='black'
@@ -50,12 +51,12 @@ class Landing extends Component {
               <Card.Body>
                 <Card.Link href="/login" style={{ color: 'white' }}>
                   want masks and gloves? , please click here
-      </Card.Link>
+              </Card.Link>
               </Card.Body>
             </Card>
-          </div>
-          <div style={{ 'marginBottom': '50px' }}>
-            <div className="col-md col-sm-6 mt-4 mx-auto">
+          </article>
+          <article style={{ 'marginBottom': '50px' }}>
+            <article className="col-md col-sm-6 mt-4 mx-auto">
               <Card
                 bg='info'
                 key='info'
@@ -66,19 +67,17 @@ class Landing extends Component {
                 <Card.Body>
                   <Card.Link href="/login" style={{ color: 'white' }}>
                     For Admin Login, please click here
- </Card.Link>
+                   </Card.Link>
                 </Card.Body>
               </Card>
-            </div>
-          </div>
-        </div>
-      </div>
+            </article>
+          </article>
+        </article>
+      </article>
 
     );
   }
 }
-
-
 
 
 
